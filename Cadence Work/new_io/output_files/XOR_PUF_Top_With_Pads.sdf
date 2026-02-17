@@ -1,0 +1,279 @@
+(DELAYFILE
+  (SDFVERSION  "OVI 2.1")
+  (DESIGN      "XOR_PUF_Top_With_Pads")
+  (DATE        "Sun Oct 26 12:01:05 IST 2025")
+  (VENDOR      "Cadence, Inc.")
+  (PROGRAM     "Genus(TM) Synthesis Solution")
+  (VERSION     "21.14-s082_1")
+  (DIVIDER     .)
+  (VOLTAGE     ::1.62)
+  (PROCESS     "::1.2")
+  (TEMPERATURE ::125.0)
+  (TIMESCALE   1ps)
+  (CELL
+     (CELLTYPE "dfnrq1")
+     (INSTANCE core.puf_inst.puf1.arbiter.response_bit_reg)
+     (DELAY
+        (ABSOLUTE
+          (PORT CP (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CP Q (::396) (::565))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CP) (::188) (::-70))
+        (SETUPHOLD (posedge D) (posedge CP) (::128) (::-55))
+        (WIDTH (posedge CP) (::185.0))
+        (WIDTH (negedge CP) (::346.1))
+     )
+  )
+  (CELL
+     (CELLTYPE "dfnrq1")
+     (INSTANCE core.puf_inst.puf2.arbiter.response_bit_reg)
+     (DELAY
+        (ABSOLUTE
+          (PORT CP (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CP Q (::414) (::584))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CP) (::188) (::-70))
+        (SETUPHOLD (posedge D) (posedge CP) (::128) (::-55))
+        (WIDTH (posedge CP) (::185.0))
+        (WIDTH (negedge CP) (::346.1))
+     )
+  )
+  (CELL
+     (CELLTYPE "dfnrq1")
+     (INSTANCE core.puf_inst.puf3.arbiter.response_bit_reg)
+     (DELAY
+        (ABSOLUTE
+          (PORT CP (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CP Q (::422) (::590))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CP) (::188) (::-70))
+        (SETUPHOLD (posedge D) (posedge CP) (::128) (::-55))
+        (WIDTH (posedge CP) (::185.0))
+        (WIDTH (negedge CP) (::346.1))
+     )
+  )
+  (CELL
+     (CELLTYPE "dfnrq1")
+     (INSTANCE core.puf_inst.puf4.arbiter.response_bit_reg)
+     (DELAY
+        (ABSOLUTE
+          (PORT CP (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CP Q (::396) (::565))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CP) (::188) (::-70))
+        (SETUPHOLD (posedge D) (posedge CP) (::128) (::-55))
+        (WIDTH (posedge CP) (::185.0))
+        (WIDTH (negedge CP) (::346.1))
+     )
+  )
+  (CELL
+     (CELLTYPE "dfnrq1")
+     (INSTANCE core.puf_inst.puf5.arbiter.response_bit_reg)
+     (DELAY
+        (ABSOLUTE
+          (PORT CP (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CP Q (::406) (::576))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CP) (::188) (::-70))
+        (SETUPHOLD (posedge D) (posedge CP) (::128) (::-55))
+        (WIDTH (posedge CP) (::185.0))
+        (WIDTH (negedge CP) (::346.1))
+     )
+  )
+  (CELL
+     (CELLTYPE "dfnrq1")
+     (INSTANCE core.puf_inst.puf6.arbiter.response_bit_reg)
+     (DELAY
+        (ABSOLUTE
+          (PORT CP (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CP Q (::446) (::615))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CP) (::188) (::-70))
+        (SETUPHOLD (posedge D) (posedge CP) (::128) (::-55))
+        (WIDTH (posedge CP) (::185.0))
+        (WIDTH (negedge CP) (::346.1))
+     )
+  )
+  (CELL
+     (CELLTYPE "dfnrq1")
+     (INSTANCE core.puf_inst.puf7.arbiter.response_bit_reg)
+     (DELAY
+        (ABSOLUTE
+          (PORT CP (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CP Q (::410) (::579))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CP) (::188) (::-70))
+        (SETUPHOLD (posedge D) (posedge CP) (::128) (::-55))
+        (WIDTH (posedge CP) (::185.0))
+        (WIDTH (negedge CP) (::346.1))
+     )
+  )
+  (CELL
+     (CELLTYPE "dfnrq1")
+     (INSTANCE core.puf_inst.puf8.arbiter.response_bit_reg)
+     (DELAY
+        (ABSOLUTE
+          (PORT CP (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CP Q (::446) (::615))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CP) (::188) (::-70))
+        (SETUPHOLD (posedge D) (posedge CP) (::128) (::-55))
+        (WIDTH (posedge CP) (::185.0))
+        (WIDTH (negedge CP) (::346.1))
+     )
+  )
+  (CELL
+     (CELLTYPE "xr03d1")
+     (INSTANCE core.puf_inst.g72__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT A3 (::0.0))
+          (COND A2==1'b0&&A3==1'b0 (IOPATH A1 Z (::1132) (::742)))
+          (COND A1==1'b0&&A2==1'b0 (IOPATH A3 Z (::1328) (::1005)))
+          (COND A1==1'b0&&A2==1'b1 (IOPATH A3 Z (::1417) (::1039)))
+          (COND A2==1'b1&&A3==1'b0 (IOPATH A1 Z (::1140) (::774)))
+          (COND A2==1'b0&&A3==1'b1 (IOPATH A1 Z (::1140) (::774)))
+          (COND A1==1'b1&&A2==1'b0 (IOPATH A3 Z (::1364) (::844)))
+          (COND A2==1'b1&&A3==1'b1 (IOPATH A1 Z (::1132) (::741)))
+          (COND A1==1'b1&&A2==1'b1 (IOPATH A3 Z (::1401) (::934)))
+          (COND A1==1'b0&&A3==1'b0 (IOPATH A2 Z (::1306) (::964)))
+          (COND A1==1'b1&&A3==1'b0 (IOPATH A2 Z (::1324) (::825)))
+          (COND A1==1'b0&&A3==1'b1 (IOPATH A2 Z (::1396) (::964)))
+          (COND A1==1'b1&&A3==1'b1 (IOPATH A2 Z (::1322) (::909)))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "xr03d1")
+     (INSTANCE core.puf_inst.g73__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT A3 (::0.0))
+          (COND A2==1'b0&&A3==1'b0 (IOPATH A1 Z (::287) (::277)))
+          (COND A1==1'b0&&A2==1'b0 (IOPATH A3 Z (::457) (::525)))
+          (COND A1==1'b0&&A2==1'b1 (IOPATH A3 Z (::545) (::560)))
+          (COND A2==1'b1&&A3==1'b0 (IOPATH A1 Z (::292) (::323)))
+          (COND A2==1'b0&&A3==1'b1 (IOPATH A1 Z (::292) (::323)))
+          (COND A1==1'b1&&A2==1'b0 (IOPATH A3 Z (::483) (::369)))
+          (COND A2==1'b1&&A3==1'b1 (IOPATH A1 Z (::287) (::277)))
+          (COND A1==1'b1&&A2==1'b1 (IOPATH A3 Z (::520) (::458)))
+          (COND A1==1'b0&&A3==1'b0 (IOPATH A2 Z (::410) (::471)))
+          (COND A1==1'b1&&A3==1'b0 (IOPATH A2 Z (::432) (::325)))
+          (COND A1==1'b0&&A3==1'b1 (IOPATH A2 Z (::506) (::458)))
+          (COND A1==1'b1&&A3==1'b1 (IOPATH A2 Z (::416) (::418)))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "xr02d1")
+     (INSTANCE core.puf_inst.g74__6260)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (IOPATH A1 Z (::395) (::384))
+          (IOPATH A2 Z (::388) (::448))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "aoim22d1")
+     (INSTANCE core.puf_inst.g75__4319)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.1))
+          (PORT A2 (::0.1))
+          (PORT B1 (::0.1))
+          (PORT B2 (::0.1))
+          (IOPATH B2 Z (::280) (::305))
+          (IOPATH A1 Z (::191) (::131))
+          (IOPATH B1 Z (::337) (::300))
+          (IOPATH A2 Z (::192) (::92))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "aoim22d1")
+     (INSTANCE core.puf_inst.g76__8428)
+     (DELAY
+        (ABSOLUTE
+          (PORT A1 (::0.1))
+          (PORT A2 (::0.1))
+          (PORT B1 (::0.1))
+          (PORT B2 (::0.1))
+          (IOPATH B2 Z (::269) (::298))
+          (IOPATH A1 Z (::177) (::118))
+          (IOPATH B1 Z (::326) (::292))
+          (IOPATH A2 Z (::178) (::85))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "inv0d0")
+     (INSTANCE core.puf_inst.g77)
+     (DELAY
+        (ABSOLUTE
+          (PORT I (::0.0))
+          (IOPATH I ZN (::395) (::165))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "inv0d0")
+     (INSTANCE core.puf_inst.g78)
+     (DELAY
+        (ABSOLUTE
+          (PORT I (::0.0))
+          (IOPATH I ZN (::395) (::165))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "pc3o05")
+     (INSTANCE pad_resp)
+     (DELAY
+        (ABSOLUTE
+          (PORT I (::0.7))
+          (IOPATH I PAD (::3989) (::3335))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "pc3d01")
+     (INSTANCE pad_trigger)
+     (DELAY
+        (ABSOLUTE
+          (PORT PAD (::0.0))
+          (IOPATH PAD CIN (::1113) (::1670))
+        )
+     )
+  )
+)
