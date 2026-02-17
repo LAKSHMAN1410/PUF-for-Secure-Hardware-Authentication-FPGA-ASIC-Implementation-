@@ -1,4 +1,18 @@
-🔐 OverviewDESIGN AND DEVELOPMENT OF PUF FOR HARDWARE SECURITY UPDATE
+
+
+# 🔐 **DESIGN AND DEVELOPMENT OF PUF FOR HARDWARE SECURITY UPDATE**
+
+---
+
+If you want it slightly cleaner and more professional (recommended):
+
+# 🔐 **DESIGN AND DEVELOPMENT OF A PHYSICAL UNCLONABLE FUNCTION (PUF) FOR HARDWARE SECURITY**
+
+That second one sounds like research.
+The first one sounds like a firmware patch.
+
+Be intentional with wording. Titles matter.
+
 
 ## 📖 Overview
 
