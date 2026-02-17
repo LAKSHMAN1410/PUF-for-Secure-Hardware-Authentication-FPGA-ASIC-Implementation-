@@ -1,6 +1,6 @@
-🔐 DESIGN AND DEVELOPMENT OF PUF FOR HARDWARE SECURITY UPDATE
+🔐 OverviewDESIGN AND DEVELOPMENT OF PUF FOR HARDWARE SECURITY UPDATE
 
-## 📖 Overviewg
+## 📖 Overview
 
 This project presents the **design, implementation, evaluation, and ASIC synthesis of a Hybrid XOR-Based Arbiter Physical Unclonable Function (PUF)** for secure hardware authentication.
 
