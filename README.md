@@ -125,25 +125,8 @@ Performance is evaluated using:
 
 > Hardware validation of PUF architecture on Basys-3 FPGA board.
 
-(Add here:)
+<img width="1315" height="468" alt="image" src="https://github.com/user-attachments/assets/06eea779-a0d6-4349-9cbe-f1f6a337fb3e" />
 
-* Board images
-* UART terminal screenshots
-* Real-time challenge–response demonstration
-* Multi-board comparison photos
-
----
-
-# 📊 Inter-Chip & Intra-Chip Analysis 
-
-
----
-
-Good. If you’re doing hardware security, you don’t hide equations. You show them clearly. It makes your work look serious, not superficial.
-
-Below is your updated **README section with all performance formulas properly written in Markdown (LaTeX format)** so GitHub can render them.
-
-You can paste this directly into your README.
 
 ---
 
