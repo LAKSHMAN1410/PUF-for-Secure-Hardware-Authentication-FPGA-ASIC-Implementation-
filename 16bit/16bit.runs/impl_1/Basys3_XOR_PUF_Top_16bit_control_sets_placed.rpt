@@ -1,0 +1,101 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Nov  4 22:40:22 2025
+| Host         : BHARATHI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Basys3_XOR_PUF_Top_16bit_control_sets_placed.rpt
+| Design       : Basys3_XOR_PUF_Top_16bit
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    23 |
+|    Minimum number of control sets                        |    23 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   127 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    23 |
+| >= 0 to < 4        |    16 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     2 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              25 |           17 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              50 |           23 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              14 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------+-----------------------------------------+-------------------------------------------------+------------------+----------------+--------------+
+|               Clock Signal              |              Enable Signal              |                 Set/Reset Signal                | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------------+-----------------------------------------+-------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG                          | uart_receiver_inst/r_rx_byte[4]_i_1_n_0 |                                                 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                          | uart_receiver_inst/r_rx_byte[2]_i_1_n_0 |                                                 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                          | uart_receiver_inst/r_rx_byte[1]_i_1_n_0 |                                                 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                          | uart_receiver_inst/r_rx_byte[3]_i_1_n_0 |                                                 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                          | uart_receiver_inst/r_rx_byte[0]_i_1_n_0 |                                                 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                          | uart_receiver_inst/r_rx_byte[5]_i_1_n_0 |                                                 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                          | uart_receiver_inst/r_rx_byte[6]_i_1_n_0 |                                                 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                          | uart_receiver_inst/r_rx_byte[7]_i_1_n_0 |                                                 |                1 |              1 |         1.00 |
+|  puf_inst/puf3/s16/mux_bottom/OutputMux |                                         |                                                 |                1 |              1 |         1.00 |
+|  puf_inst/puf4/s16/mux_bottom/OutputMux |                                         |                                                 |                1 |              1 |         1.00 |
+|  puf_inst/puf8/s16/mux_bottom/OutputMux |                                         |                                                 |                1 |              1 |         1.00 |
+|  puf_inst/puf1/s16/mux_bottom/OutputMux |                                         |                                                 |                1 |              1 |         1.00 |
+|  puf_inst/puf2/s16/mux_bottom/OutputMux |                                         |                                                 |                1 |              1 |         1.00 |
+|  puf_inst/puf5/s16/mux_bottom/OutputMux |                                         |                                                 |                1 |              1 |         1.00 |
+|  puf_inst/puf6/s16/mux_bottom/OutputMux |                                         |                                                 |                1 |              1 |         1.00 |
+|  puf_inst/puf7/s16/mux_bottom/OutputMux |                                         |                                                 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                          | FSM_onehot_current_state[3]_i_1_n_0     |                                                 |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                          | uart_transmitter_inst/r_tx_byte         |                                                 |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                          | challenge_reg[15]_i_1_n_0               |                                                 |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                          | challenge_reg[7]_i_1_n_0                |                                                 |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                          | uart_receiver_inst/r_clk_counter        |                                                 |                5 |             14 |         2.80 |
+|  clk_IBUF_BUFG                          | uart_transmitter_inst/r_clk_counter     | uart_transmitter_inst/r_clk_counter[13]_i_1_n_0 |                3 |             14 |         4.67 |
+|  clk_IBUF_BUFG                          |                                         |                                                 |                9 |             17 |         1.89 |
++-----------------------------------------+-----------------------------------------+-------------------------------------------------+------------------+----------------+--------------+
+
+
